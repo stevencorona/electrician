@@ -9,11 +9,11 @@ class Circuit {
   }
 
   public function isCircuitOpen() {
-    return true;
+    return false;
   }
 
   public function isCircuitClosed() {
-    return false;
+    return true;
   }
   
 }
