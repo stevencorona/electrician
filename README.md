@@ -26,17 +26,17 @@ Here's some psuedocode of how it works
     
     $circuit_info = stat($circuit_path);
     
-    // If the circuit is closed but has been closed >= 60 seconds, re-open it.
+    // If the circuit is open but has been open >= 60 seconds, close it.
     if ($circuit_info != false && (time() - $circuit_info["atime"] >= 60) {
       @unlink($circuit_path);
     }
     
     // False from stat means that the file doesn't exist!
-    // Circuit is open
+    // Circuit is closed
     if ($circuit_info == false) {
      
      try {
-        // Circuit is open, make your HTTP request here
+        // Circuit is closed, make your HTTP request here
         // Cause a failure...
         throw new Exception();
       } catch (Exception $ex) {
