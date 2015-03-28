@@ -19,6 +19,8 @@ Circuits are shared between all PHP-FPM workers on a single server. There's no c
 
 The overhead of each circuit check? One stat.
 
+The library uses the presence of a file (not the contents) to determine if a circuit has been tripped (it's open). The creation time of the file is also used to determine when the circuit should be retryed.
+
 Here's some psuedocode of how it works
 
     $circuit = "test";
