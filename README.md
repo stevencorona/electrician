@@ -1,7 +1,7 @@
 # electrician
 a scalable php circuit breaker library
 
-doesn't rely on apc/memcached/redis (because what's the point?)
+doesn't rely on apc/memcached/redis (because what's the point? who circuit-breaks the circuit-breaker data store?)
 
 ## Why another circuit breaker library?
 
