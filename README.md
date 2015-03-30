@@ -52,3 +52,5 @@ Here's some psuedocode of how it works
       // Failure path
     
     }
+
+## How to use it
