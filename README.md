@@ -54,3 +54,8 @@ Here's some psuedocode of how it works
     }
 
 ## How to use it
+
+**Define a new Circuit**
+
+    $circuit = new Circuit("github_api");
+    
