@@ -23,6 +23,7 @@ The library uses the presence of a file (not the contents) to determine if a cir
 
 Here's some psuedocode of how it works
 
+```php    
     $circuit = "test";
     $circuit_path = "/tmp/{$circuit}";
     
@@ -52,10 +53,12 @@ Here's some psuedocode of how it works
       // Failure path
     
     }
+```
 
 ## How to use it
 
 **Define a new Circuit**
 
-    $circuit = new Circuit("github_api");
-    
+```php
+$circuit = new Circuit("github_api");
+```
