@@ -62,3 +62,18 @@ Here's some psuedocode of how it works
 ```php
 $circuit = new Circuit("github_api");
 ```
+
+
+**Wrap your logic in a circuit**
+
+```php
+$circuit = new Circuit("github_api");
+
+$circuit->run(function() {
+    // If this throws an exception, the circuit opens
+},
+
+function() {
+    // Error case
+});
+```
