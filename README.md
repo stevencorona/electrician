@@ -70,6 +70,8 @@ $circuit = new Circuit("github_api");
 $circuit = new Circuit("github_api");
 
 $circuit->run(function() {
+    $client = new GuzzleHttp\Client();
+    $res = $client->get('https://api.github.com/user', ['auth' =>  ['user', 'pass', 'timeout' => 1]]);
     // If this throws an exception, the circuit opens
 },
 function() {
