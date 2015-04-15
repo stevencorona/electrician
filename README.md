@@ -72,7 +72,6 @@ $circuit = new Circuit("github_api");
 $circuit->run(function() {
     // If this throws an exception, the circuit opens
 },
-
 function() {
     // Error case
 });
