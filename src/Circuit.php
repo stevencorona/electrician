@@ -16,4 +16,9 @@ class Circuit {
     return true;
   }
   
+  public function run(Closure $closed, Closure $open) {
+    
+    
+  }
+  
 }
